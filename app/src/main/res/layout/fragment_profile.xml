@@ -1,0 +1,140 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.abdelhalim.withme.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:id="@+id/profileView"
+            android:layout_centerHorizontal="true"
+            />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:id="@+id/imageButtonProfile"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@+id/profileView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="7dp" />
+</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0"
+            android:id="@+id/line2"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/emailText"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Career"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/careerText"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/phoneText"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Position"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/positionText"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorAccent"
+                android:ems="10"
+                android:id="@+id/editText" />
+
+            <Button
+                android:text="Post"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_below="@+id/editText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="7dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/imageButton" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listview"
+                android:verticalSpacing="5dp"
+                android:gravity="center">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="600dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+</FrameLayout>
+</ScrollView>
